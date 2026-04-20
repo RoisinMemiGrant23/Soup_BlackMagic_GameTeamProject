@@ -10,9 +10,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 move;
     private CharacterController controller;
     private bool isGrounded;
-    private float moveSpeed = 30f;
-    private float gravity = -9.81f;
-    private float JumpHeight = 10.4f;
+    public float moveSpeed = 30f;
+    public float gravity = -9.81f;
+    public float JumpHeight = 10.4f;
     public Transform ground;
     public LayerMask groundMask;
     public float distanceToGround = 0.4f;
