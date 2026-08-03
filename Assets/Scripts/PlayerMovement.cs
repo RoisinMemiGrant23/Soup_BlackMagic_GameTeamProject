@@ -10,25 +10,52 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 move;
     private CharacterController controller;
     private bool isGrounded;
-    public float moveSpeed = 30f;
+    private float moveSpeed = 120f;
     public float gravity = -9.81f;
     public float JumpHeight = 10.4f;
     public Transform ground;
     public LayerMask groundMask;
     public float distanceToGround = 0.4f;
+    public float sprintSpeed;
+    public float walkSpeed;
+    public KeyCode sprintKey = KeyCode.LeftShift;
+
+    public MovementState state;
+
+    public enum MovementState
+    {
+        move,
+        sprinting,
+    }
 
     private void Awake()
     {
         controls = new Controller();
         controller = GetComponent<CharacterController>();
     }
+    
+    private void StateHandler()
+    {
+        if(isGrounded && Input.GetKey(sprintKey))
+        {
+            state = MovementState.sprinting;
+            moveSpeed = sprintSpeed;
+        }
 
+        else if(isGrounded)
+        {
+            state = MovementState.move;
+            moveSpeed = walkSpeed;
+        }
+    }
     
     void Update()
     {
         Gravity();
         Movement();
         JumpH();
+
+        StateHandler();
     }
 
     private void Gravity() 
@@ -68,4 +95,6 @@ public class PlayerMovement : MonoBehaviour
     {
         controls.Disable();
     }
+
+
 }
