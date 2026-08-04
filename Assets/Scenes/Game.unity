@@ -329,7 +329,8 @@ Transform:
   m_LocalPosition: {x: 0.01, y: 0.97, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 84322510}
   m_Father: {fileID: 735381583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &19185237
@@ -423,7 +424,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 119
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 73a5c06d9a3f8114fafea1eba5ab2a29, type: 2}
   m_TargetDisplay: 0
@@ -737,6 +738,50 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!1 &84322509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84322510}
+  - component: {fileID: 84322511}
+  m_Layer: 0
+  m_Name: Temp Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84322510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84322509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 19185236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &84322511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84322509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db83fbe33fb017947a7c4e7a93d8a911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &86295676
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,6 +4247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chickentextured (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4259,6 +4308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chickentextured (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4315,6 +4368,10 @@ PrefabInstance:
     - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
       propertyPath: m_Name
       value: chickentextured (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9216,14 +9273,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ad3c17fcf8f3ac04194fd99507f33135, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1488714330}
+      addedObject: {fileID: 1488714332}
   m_SourcePrefab: {fileID: 100100000, guid: ad3c17fcf8f3ac04194fd99507f33135, type: 3}
 --- !u!1 &1488714329 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ad3c17fcf8f3ac04194fd99507f33135, type: 3}
   m_PrefabInstance: {fileID: 1488714328}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1488714330
+--- !u!64 &1488714332
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11135,6 +11192,10 @@ PrefabInstance:
     - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
       propertyPath: m_Name
       value: chickentextured (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13171,6 +13232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chickentextured (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13315,6 +13380,10 @@ PrefabInstance:
     - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
       propertyPath: m_Name
       value: chickentextured (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14191,6 +14260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: chickentextured (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15024,6 +15097,73 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &2054981906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+  m_PrefabInstance: {fileID: 7348733899562975103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2054981911
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054981906}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2054981912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054981906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b300833a11260994dbb55ca3253f6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  throwForce: 161.4
+  maxDistance: 117
+--- !u!65 &2054981913
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054981906}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02, y: 0.040373135, z: 0.04957434}
+  m_Center: {x: 0, y: 0.004635729, z: 0.007223962}
 --- !u!1001 &2074194289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15075,6 +15215,10 @@ PrefabInstance:
     - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
       propertyPath: m_Name
       value: chickentextured (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15663,10 +15807,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: chickentextured
       objectReference: {fileID: 0}
+    - target: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      propertyPath: m_TagString
+      value: canPickUp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054981912}
+    - targetCorrespondingSourceObject: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054981911}
+    - targetCorrespondingSourceObject: {fileID: 1750366482041367050, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2054981913}
   m_SourcePrefab: {fileID: 100100000, guid: 2a7e43aac4fda2c48802001b2689213d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
