@@ -70,9 +70,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b8f5d7ba72e8679479aaae378bff675d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -2033065817932478858}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b8f5d7ba72e8679479aaae378bff675d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: -1755662006811214591}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b8f5d7ba72e8679479aaae378bff675d, type: 3}
       insertIndex: -1
@@ -83,20 +80,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b8f5d7ba72e8679479aaae378bff675d, type: 3}
   m_PrefabInstance: {fileID: 1480528532858623835}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-2033065817932478858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1750366482041367050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b300833a11260994dbb55ca3253f6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PickUpItem
-  throwForce: 0
-  maxDistance: 0
 --- !u!54 &-1755662006811214591
 Rigidbody:
   m_ObjectHideFlags: 0
