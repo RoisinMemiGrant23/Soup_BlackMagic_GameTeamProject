@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class PickUp : MonoBehaviour
 {
    public GameObject pickUpText;
+   public GameObject AxeImage;
    public GameObject AxeOnPlayer;
    public GameObject Axe;
 
@@ -25,6 +26,7 @@ public class PickUp : MonoBehaviour
 	      //gameObject.SetActive(false);
 	      AxeOnPlayer.SetActive(true);
 	      pickUpText.SetActive(false);
+		  AxeImage.SetActive(true);
 		  Destroy(Axe);
 	   } 
    }
