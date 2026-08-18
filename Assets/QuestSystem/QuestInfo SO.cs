@@ -1,0 +1,24 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+[CreateAssetMenu(fileName = "QuestInfoSO", menuName = "ScriptableObjects/QuestInfoSO", order = 1)]
+
+public class QuestInfoSO : ScriptableObject
+{
+   [field: SerializeField] public string id { get; private set; }
+
+   public string displayName;
+
+   public GameObject[] questStepPrefabs;
+
+   public int Reward;
+
+   private void OnValidate()
+   {
+	   #if UNITY_EDITOR
+	   id = this.name;
+	   UnityEditor.EditorUtility.SetDirty(this);
+	   #endif
+   }
+}
